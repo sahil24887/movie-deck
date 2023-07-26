@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Deck</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <h1>Movie Deck</h1>
+        </a>
+    </header>
+
+    <!-- Create a search bar element with an input and a button -->
+    <div class="search-bar">
+        <input type="search" name="search" id="search-input" placeholder="Search by name..." autocomplete="off" />
+        <button id="search-button">Search</button>
+    </div>
+
+    <!-- Create a sorting options element with two buttons -->
+    <div class="sorting-options">
+        <button id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button id="sort-by-rating">Sort by rating (least to most)</button>
+    </div>
+
+    <!-- Create a tabs element with two tabs -->
+    <div class="tabs">
+        <button id="all-tab" class="active-tab">All</button>
+        <button id="favorites-tab">Favorites</button>
+    </div>
+
+    <div class="movie-list-pagination-btns">
+        <!-- Create a list element that will display the movies in cards -->
+        <ul id="movies-list">
+            <!-- <li class="card">
+              <img
+                class="poster"
+                src="https://image.tmdb.org/t/p/original/${movie.poster_path}"
+                alt="${movie.title}"
+              />
+              <p class="title">${movie.title}</p>
+              <section class="vote-favouriteIcon">
+                <section class="vote">
+                  <p class="vote-count">Votes: ${movie.vote_count}</p>
+                  <p class="vote-average">Rating: ${movie.vote_average}</p>
+                </section>
+                <i class="fa-regular fa-heart fa-2xl" id="favorite-icon"></i>
+              </section>
+            </li> -->
+        </ul>
+        <div class="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="page-number-button">Current Page: 1</button>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+
+    <!-- Create a footer element with some information -->
+    <footer>
+        <p>&copy; 2023 Movie Deck</p>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/68129f478c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
